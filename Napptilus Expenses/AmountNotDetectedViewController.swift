@@ -22,7 +22,7 @@ class AmountNotDetectedViewController: UIViewController {
         self.view.backgroundColor = UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.85)
         
         // Set image
-        set_image()
+        set_images()
         
         // Set labels
         set_labels()
@@ -32,7 +32,7 @@ class AmountNotDetectedViewController: UIViewController {
         
     }
     
-    func set_image() {
+    func set_images() {
         let screenHeight = view.safeAreaLayoutGuide.layoutFrame.size.height
         let imageName = "ic_no_detected"
         let image = UIImage(named: imageName)
@@ -62,8 +62,8 @@ class AmountNotDetectedViewController: UIViewController {
         self.view.addSubview(label1)
         
         // Constraints
-        label1.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.861).isActive = true
-        label1.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.033).isActive = true
+        // label1.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.861).isActive = true
+        //label1.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.033).isActive = true
         //label1.adjustsFontSizeToFitWidth = true
         label1.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 14.2).isActive = true
         label1.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor).isActive = true
@@ -82,8 +82,8 @@ class AmountNotDetectedViewController: UIViewController {
         self.view.addSubview(label2)
         
         // Constraints
-        label2.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.753).isActive = true
-        label2.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.09).isActive = true
+        //label2.widthAnchor.constraint(equalTo: view.widthAnchor, multiplier: 0.753).isActive = true
+        //label2.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.09).isActive = true
         //label2.adjustsFontSizeToFitWidth = true
         label2.topAnchor.constraint(equalTo: label1.bottomAnchor, constant: 0).isActive = true
         label2.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor).isActive = true
@@ -102,7 +102,7 @@ class AmountNotDetectedViewController: UIViewController {
         button1.setTitleColor(.white, for: .normal)
         button1.setTitle("Introducir importe manualmente", for: .normal)
         button1.titleLabel?.font = UIFont(name: "Helvetica-Bold", size: fontSize)
-        //button.addTarget(self, action: #selector(handleFollowTapped), for: .touchUpInside)
+        button1.addTarget(self, action: #selector(handleFollowTapped), for: .touchUpInside)
         button1.layer.cornerRadius = radiusSize
        
         self.view.addSubview(button1)
@@ -124,7 +124,7 @@ class AmountNotDetectedViewController: UIViewController {
         button2.titleLabel?.font = UIFont(name: "Helvetica-Bold", size: fontSize)
         button2.layer.borderWidth = 2.0
         button2.layer.borderColor = UIColor(red: 0.0, green: 0.78, blue: 1.0, alpha: 1.0).cgColor
-        //button.addTarget(self, action: #selector(handleFollowTapped), for: .touchUpInside)
+        button2.addTarget(self, action: #selector(handleFollowTapped), for: .touchUpInside)
         button2.layer.cornerRadius = radiusSize
         
         self.view.addSubview(button2)
@@ -137,5 +137,8 @@ class AmountNotDetectedViewController: UIViewController {
         button2.centerXAnchor.constraint(equalTo: view.safeAreaLayoutGuide.centerXAnchor).isActive = true
     }
 
+    @objc func handleFollowTapped() {
+        dismiss(animated: true, completion: nil)
+    }
 }
 
