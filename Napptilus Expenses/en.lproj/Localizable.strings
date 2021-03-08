@@ -1,0 +1,12 @@
+/* 
+  LocalizableEN.strings
+  Napptilus Expenses
+
+  Created by Lluis Martinez on 05/03/2021.
+  
+*/
+
+"NO_AMOUNT_DETECTED_TITLE" = "Amount not detected";
+"NO_AMOUNT_DETECTED_DESCRIPTION" = "Unable to recognize any amount. Enter the value manually or take another picture of the ticket.";
+"NO_AMOUNT_DETECTED_MANUAL_IMPORT" = "Enter value manually";
+"NO_AMOUNT_DETECTED_NEW_PHOTO" = "Take a new photo";

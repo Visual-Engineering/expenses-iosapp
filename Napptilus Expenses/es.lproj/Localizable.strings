@@ -1,0 +1,12 @@
+/* 
+  LocalizableEN.strings
+  Napptilus Expenses
+
+  Created by Lluis Martinez on 05/03/2021.
+  
+*/
+
+"NO_AMOUNT_DETECTED_TITLE" = "Importe no detectado";
+"NO_AMOUNT_DETECTED_DESCRIPTION" = "No se ha reconocido ningún importe. Introdúcelo manualmente o fotografía el ticket de nuevo";
+"NO_AMOUNT_DETECTED_MANUAL_IMPORT" = "Introducir importe manualmente";
+"NO_AMOUNT_DETECTED_NEW_PHOTO" = "Fotografiar de nuevo";

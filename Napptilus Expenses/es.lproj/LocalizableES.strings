@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  Napptilus Expenses
+
+  Created by Lluis Martinez on 05/03/2021.
+  
+*/
+
+"NO_AMOUNT_DETECTED_TITLE" = "Importe no detectado";
